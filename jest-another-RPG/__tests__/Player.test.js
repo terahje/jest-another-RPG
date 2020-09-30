@@ -6,9 +6,9 @@ const Potion = require('../lib/Potion');
 jest.mock('../lib/Potion');
 
 test('creates a player object', () => {
-    const player = new Player('Terahje the Choosen');
+    const player = new Player('Terahje the Chosen');
 
-    expect(player.name).toBe('Terahje the Choosen');
+    expect(player.name).toBe('Terahje the Chosen');
     expect(player.health).toEqual(expect.any(Number));
     expect(player.strength).toEqual(expect.any(Number));
     expect(player.agility).toEqual(expect.any(Number));
@@ -18,7 +18,7 @@ test('creates a player object', () => {
 });
 
 test("gets player's stats as an object", () => {
-    const player = new Player('Terahje the Choosen');
+    const player = new Player('Terahje the Chosen');
 
     expect(player.getStats()).toHaveProperty('potions');
     expect(player.getStats()).toHaveProperty('health');
@@ -27,11 +27,39 @@ test("gets player's stats as an object", () => {
 });
 
 test('gets inventory from player or returns false', () => {
-    const player = new Player('Terahje the Choosen');
+    const player = new Player('Terahje the Chosen');
 
     expect(player.getInventory()).toEqual(expect.any(Array));
 
     player.inventory = [];
 
     expect(player.getInventory()).toEqual(false);
+});
+
+test("gets player's health value", () => {
+    const player = new Player('Terahje the Chosen');
+
+    expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
+});
+
+test('checks if player is alive of not', () => {
+    const player = new Player('Terahje the Chosen');
+
+    expect(player.isAlive()).toBeTruthy();
+
+    player.health = 0;
+
+    expect(player.isAlive()).toBeFalsy();
+});
+
+test("subtracts from player's health", () => {
+    const player = new Player('Terahje the Chosen');
+    const oldHealth = player.health;
+
+    player.reduceHealth(5);
+    expect(player.health).toBe(oldHealth - 5);
+
+    player.reduceHealth(99999);
+
+    expect(player.health).toBe(0);
 });
