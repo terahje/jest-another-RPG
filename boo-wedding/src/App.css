@@ -1,0 +1,303 @@
+.landing-grid {
+  /* background-image: url(./assets/images/landBack.jpg); */
+  /* background-size: cover;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; */
+}
+
+/* .homeTexture {
+  opacity: 30%;
+} */
+
+header {
+  font-family: 'Dancing Script', cursive;
+}
+
+header nav {
+  font-size: xx-large;
+}
+
+h1 {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projects-grid {
+  display: flex;
+}
+.header title {
+  color: white;
+}
+
+.mdl-layout__drawer-button:hover {
+  background-color: rgba(236, 236, 236, 0.753);
+  color: #000428;
+  border-radius: 10px;
+}
+
+.mdl-layout__drawer .mdl-navigation a.mdl-navigation__link:hover {
+  color: white;
+  background-color: rgba(0, 34, 65, 0.7);
+}
+
+/* Resume Page css */
+.resume-right-col {
+  background: rgb(6, 44, 97);
+  color: white;
+  padding: 2em;
+}
+
+.skills-grid p {
+  color: white;
+}
+
+.avatar-img {
+  height: 450px;
+  padding-top: 7em;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.banner-text {
+  background-color: rgba(32, 32, 32, 0.76);
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+.projectButtons {
+  text-align: center;
+}
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+
+.contact-list a {
+  color: #004e92;
+}
+
+.contact-list a:hover {
+  color: greenyellow;
+  background-color: rgba(0, 23, 43, 0.3);
+  border-radius: 5px;
+}
+
+.conBackGrid {
+  /* background-image: url(./assets/images/landBack.jpg); */
+  background-size: contain;
+  border-radius: 5px;
+  box-shadow: rgba(0, 23, 43, 0.8);
+}
+
+header a:hover {
+  background-color: rgba(0, 23, 43, 0.7);
+  color: #000428;
+  border-radius: 10px;
+}
+
+.nav-color {
+  color: #004e92;
+}
+
+header link .nav-color {
+  background-color: rgba(236, 236, 236, 0.753);
+  color: #000428;
+  border-radius: 10px;
+}
+
+.social-links a:hover {
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.mdl-navigation__link {
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  opacity: 0.87;
+}
+
+.mdl-layout__header-row .mdl-navigation__link:hover {
+  color: white;
+}
+
+/* about section */
+
+.about-main-col {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.8),
+    rgba(0, 4, 40, 0.8)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.8),
+    rgba(0, 4, 40, 0.8)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-header {
+  color: white;
+}
+
+.about-body {
+  background-color: rgba(236, 236, 236, 0.1);
+  padding: 10px 25px 10px 25px;
+}
+
+.about-body p {
+  font-weight: bolder;
+  color: whitesmoke;
+  font-size: large;
+}
+
+.about-img {
+  height: 450px;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+  border-radius: 20px;
+}
+
+.aboutBadge-img {
+  height: 250px;
+}
+
+a hover {
+  color: rgba(236, 236, 236, 0.1);
+}
+
+.about-back {
+  position: sticky;
+  background-size: cover;
+}
+
+.about-body-col {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.9),
+    rgba(0, 4, 40, 0.9)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    rgba(0, 78, 146, 0.9),
+    rgba(0, 4, 40, 0.9)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* projects css */
+.mdl-card__title-text {
+  background-color: rgba(0, 4, 40, 0.61);
+  font-family: 'Oxygen';
+  width: 100%;
+  border-radius: 2px;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.mdl-grid {
+  display: contents;
+  flex-flow: row wrap;
+  margin: 0 auto 0 auto;
+  align-items: stretch;
+}
+
+/* new styles for landingpage */
+.demo-layout-transparent {
+  background: url('./assets/images/Ruve&Terahje-933.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+//      your background is light. */
+  color: white;
+}
